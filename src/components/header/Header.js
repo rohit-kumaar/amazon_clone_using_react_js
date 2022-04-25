@@ -14,7 +14,7 @@ function Header() {
         <div className="container">
           <div className="header__content">
             {/* Logo  */}
-            <Link to="/login">
+            <Link to="/main">
               <img
                 className="header__logo"
                 src="https://pngshare.com/wp-content/uploads/2021/06/Amazon-Logo-Black-Background-11.png"
@@ -43,27 +43,27 @@ function Header() {
                 </button>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Action
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Another action
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Something else here
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       Separated link
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <input type="text" className="form-control" />
@@ -139,7 +139,7 @@ function Header() {
               </div>
 
               {/* Sign in or  Login  */}
-              <Link to="/" className="header__login text-white">
+              <Link to="/login" className="header__login text-white">
                 <div>
                   <span>Hello, Sign in</span>
                   <span className="fw-bold">Account & Lists</span>
@@ -159,7 +159,7 @@ function Header() {
               </Link>
 
               {/* Add to cart icon  */}
-              <Link to="/" className="header__add-to-cart">
+              <Link to="/cart" className="header__add-to-cart">
                 <div className="position-relative  ">
                   <FiShoppingCart
                     style={{ width: "38px", height: "26px" }}
