@@ -76,6 +76,13 @@ function Header() {
                 </span>
               </div>
             </form>
+            {/* hamburger */}
+            <div className="header__hamburger ">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
             {/* Right section  */}
             <div className="header__right">
               {/* Your language  */}
@@ -174,13 +181,6 @@ function Header() {
                 </div>
                 <span className="fw-bold text-white ">Cart</span>
               </Link>
-
-              {/* hamburger */}
-              <div className="header__hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
             </div>
           </div>
         </div>
