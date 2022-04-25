@@ -31,7 +31,7 @@ function Header() {
             </Link>
             {/* Search Bar  */}
             <form className="header__search-bar">
-              <div class="input-group ">
+              <div className="input-group ">
                 <button
                   className="btn btn-outline-light bg-light text-black-50 dropdown-toggle"
                   type="button"
@@ -66,7 +66,7 @@ function Header() {
                     </a>
                   </li>
                 </ul>
-                <input type="text" class="form-control" />
+                <input type="text" className="form-control" />
                 <span
                   className="input-group-text bg-warning "
                   style={{ cursor: "pointer" }}
@@ -160,11 +160,19 @@ function Header() {
 
               {/* Add to cart icon  */}
               <Link to="/" className="header__add-to-cart">
-                <FiShoppingCart
-                  style={{ width: "38px", height: "26px" }}
-                  className="text-white"
-                />
-                <span className="fw-bold text-white">Cart</span>
+                <div className="position-relative  ">
+                  <FiShoppingCart
+                    style={{ width: "38px", height: "26px" }}
+                    className="text-white"
+                  />
+                  <span
+                    className="position-absolute bg-warning rounded-circle text-black fw-bold"
+                    style={{ top: "-12px" }}
+                  >
+                    1
+                  </span>
+                </div>
+                <span className="fw-bold text-white ">Cart</span>
               </Link>
 
               {/* hamburger */}

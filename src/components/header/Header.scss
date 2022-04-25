@@ -68,6 +68,16 @@
   &__add-to-cart {
     display: flex;
 
+    div {
+      span {
+        left: 34%;
+        display: grid;
+        place-items: center;
+        width: 20px;
+        aspect-ratio: 1 / 1;
+      }
+    }
+
     span {
       align-self: flex-end;
       font-size: 14px;
