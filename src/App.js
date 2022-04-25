@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Cart from "./components/cart/Cart";
 import Main from "./components/main/Main";
+import Error from "./components/error/Error";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/login" element={<h1>Login</h1>} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/main" element={<Main />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
       </div>
     </Router>
