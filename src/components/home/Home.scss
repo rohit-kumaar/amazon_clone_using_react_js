@@ -1,0 +1,11 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.home {
+  height: calc(100vh - 60px);
+  background: linear-gradient(
+    to bottom,
+    rgba($color-black, 1),
+    rgba($color-white, 0)
+  );
+}

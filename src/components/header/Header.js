@@ -151,18 +151,22 @@ function Header() {
                 </ul>
               </div>
 
-              {/* Sign in or  Login  */}
+              {/* Sign in or  login  */}
               <Link
-                to="/login"
-                className="header__login text-white d-flex align-items-center justify-content-center p-1 h-100"
+                to="/signin"
+                className="header__signin text-white d-flex align-items-center justify-content-center p-1 h-100"
               >
                 <div>
                   <span>Hello, Sign in</span>
                   <span className="fw-bold">Account & Lists</span>
                 </div>
 
-                <div>
+                <div className="header__signin-icon">
                   <RiArrowDropDownFill />
+
+                  <div className="header__signin-option">
+                    <span></span>
+                  </div>
                 </div>
               </Link>
 
