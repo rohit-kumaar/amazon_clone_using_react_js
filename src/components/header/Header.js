@@ -14,15 +14,21 @@ function Header() {
         <div className="container">
           <div className="header__content">
             {/* Logo  */}
-            <Link to="/main">
+            <Link
+              to="/main"
+              className="header__logo d-flex align-items-center justify-content-center p-1"
+            >
               <img
-                className="header__logo"
+                className="header__logo-img"
                 src="https://pngshare.com/wp-content/uploads/2021/06/Amazon-Logo-Black-Background-11.png"
                 alt="Amazon logo"
               />
             </Link>
             {/* Address  */}
-            <Link to="/" className="header__your-address">
+            <Link
+              to="/"
+              className="header__your-address d-flex align-items-center justify-content-center p-1"
+            >
               <ImLocation2 className="text-white fs-5" />
               <div className="d-flex flex-column lh-1 ">
                 <span className="text-muted fw-bold">Hello</span>
@@ -30,7 +36,7 @@ function Header() {
               </div>
             </Link>
             {/* Search Bar  */}
-            <form className="header__search-bar">
+            <form className="header__search-bar d-flex align-items-center justify-content-center p-1">
               <div className="input-group ">
                 <button
                   className="btn btn-outline-light bg-light text-black-50 dropdown-toggle"
@@ -146,7 +152,10 @@ function Header() {
               </div>
 
               {/* Sign in or  Login  */}
-              <Link to="/login" className="header__login text-white">
+              <Link
+                to="/login"
+                className="header__login text-white d-flex align-items-center justify-content-center p-1 h-100"
+              >
                 <div>
                   <span>Hello, Sign in</span>
                   <span className="fw-bold">Account & Lists</span>
@@ -158,7 +167,10 @@ function Header() {
               </Link>
 
               {/* Return your order */}
-              <Link to="/" className="text-white">
+              <Link
+                to="/"
+                className="header__return-order text-white h-100 d-flex align-items-center justify-content-center p-1"
+              >
                 <div className="d-flex flex-column lh-1">
                   <span style={{ fontSize: "12px" }}>Returns</span>
                   <span className="fw-bold"> & Orders</span>
@@ -166,7 +178,10 @@ function Header() {
               </Link>
 
               {/* Add to cart icon  */}
-              <Link to="/cart" className="header__add-to-cart">
+              <Link
+                to="/cart"
+                className="header__add-to-cart h-100 d-flex align-items-center justify-content-center p-1"
+              >
                 <div className="position-relative  ">
                   <FiShoppingCart
                     style={{ width: "38px", height: "26px" }}
