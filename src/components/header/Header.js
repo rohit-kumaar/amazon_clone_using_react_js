@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import { ImLocation2 } from "react-icons/im";
@@ -10,7 +9,7 @@ import flag from "../../images/india-flag.png";
 function Header() {
   return (
     <>
-      <header className="header">
+      <header className="header fixed-top">
         <div className="container">
           <div className="header__content">
             {/* Logo  */}
