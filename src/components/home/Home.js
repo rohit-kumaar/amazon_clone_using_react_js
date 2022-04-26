@@ -1,5 +1,5 @@
 import "./Home.scss";
-import Products from "../products/Products";
+import Product from "../products/Product";
 
 function Home() {
   return (
@@ -8,7 +8,14 @@ function Home() {
         <div className="container">Home</div>
       </div>
       {/* Products Section  */}
-      <Products />
+
+      <Product
+        id="123"
+        title="Apple"
+        price={"89,999"}
+        rating={5}
+        img="https://pbs.twimg.com/profile_images/1283958620359516160/p7zz5dxZ.jpg"
+      />
     </>
   );
 }
