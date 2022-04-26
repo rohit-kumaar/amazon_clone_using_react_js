@@ -1,5 +1,6 @@
 import "./Home.scss";
 import Product from "../products/Product";
+import data from "../../data/ProductData";
 
 function Home() {
   return (
@@ -9,13 +10,21 @@ function Home() {
       </div>
       {/* Products Section  */}
 
-      <Product
-        id="123"
-        title="Apple"
-        price={"89,999"}
-        rating={5}
-        img="https://pbs.twimg.com/profile_images/1283958620359516160/p7zz5dxZ.jpg"
-      />
+      <div className="container">
+        <div className="products">
+          {data.productData.map((item) => {
+            return (
+              <Product
+                id={item.id}
+                title={item.title}
+                price={item.price}
+                rating={item.rating}
+                img={item.img}
+              />
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 }
