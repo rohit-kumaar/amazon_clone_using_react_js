@@ -11,7 +11,7 @@ function Home() {
       {/* Products Section  */}
 
       <div className="container">
-        <div className="products">
+        <div className="products ">
           {data.productData.map((item) => {
             return (
               <Product

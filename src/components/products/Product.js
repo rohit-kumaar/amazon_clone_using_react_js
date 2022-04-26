@@ -23,7 +23,7 @@ function product(props) {
           {/* Image  */}
         </div>
         <img className="product__img" src={props.img} alt="Apple" />
-        <button className="bg-warning fw-bold rounded-pill">Add To Cart</button>
+        <button className="bg-warning fw-bold rounded-pill my-3">Add To Cart</button>
       </div>
     </>
   );
