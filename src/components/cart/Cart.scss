@@ -1,8 +1,16 @@
 @import "../../scss/style.scss";
 
 .cart {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 60px);
+  &__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+  }
+
+  &__added {
+    height: auto;
+    margin-top: 120px;
+    border: 1px solid red;
+  }
 }

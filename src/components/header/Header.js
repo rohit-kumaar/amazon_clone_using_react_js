@@ -30,7 +30,7 @@ function Header() {
             {/* Address  */}
             <Link
               to="/*"
-              className="header__your-address d-flex align-items-center justify-content-center p-1"
+              className="header__your-address align-items-center justify-content-center p-1"
             >
               <ImLocation2 className="text-white fs-5" />
               <div className="d-flex flex-column lh-1 ">
@@ -39,7 +39,7 @@ function Header() {
               </div>
             </Link>
             {/* Search Bar  */}
-            <form className="header__search-bar d-flex align-items-center justify-content-center p-1">
+            <form className="header__search-bar align-items-center justify-content-center p-1">
               <div className="input-group ">
                 <button
                   className="btn btn-outline-light bg-light text-black-50 dropdown-toggle"
@@ -95,7 +95,7 @@ function Header() {
             {/* Right section  */}
             <div className="header__right">
               {/* Your language  */}
-              <div className="btn-group ">
+              <div className="btn-group header__language ">
                 <button
                   type="button"
                   className="btn btn-dark btn-outline-secondary"
@@ -157,7 +157,7 @@ function Header() {
               {/* Sign in or  login  */}
               <Link
                 to="/signin"
-                className="header__signin text-white d-flex align-items-center justify-content-center p-1 h-100"
+                className="header__signin text-white align-items-center justify-content-center p-1 h-100"
               >
                 <div>
                   <span>Hello, Sign in</span>
@@ -176,7 +176,7 @@ function Header() {
               {/* Return your order */}
               <Link
                 to="/*"
-                className="header__return-order text-white h-100 d-flex align-items-center justify-content-center p-1"
+                className="header__return-order text-white h-100  align-items-center justify-content-center p-1"
               >
                 <div className="d-flex flex-column lh-1">
                   <span style={{ fontSize: "12px" }}>Returns</span>
@@ -187,7 +187,7 @@ function Header() {
               {/* Add to cart icon  */}
               <Link
                 to="/cart"
-                className="header__add-to-cart h-100 d-flex align-items-center justify-content-center p-1"
+                className="header__add-to-cart h-100 align-items-center justify-content-center p-1"
               >
                 <div className="position-relative  ">
                   <FiShoppingCart

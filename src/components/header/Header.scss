@@ -32,7 +32,7 @@
     align-items: center;
     width: 185px;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xxl) {
       display: flex;
     }
 
@@ -53,8 +53,8 @@
     width: 50%;
     display: none;
 
-    @include media-breakpoint-up(md) {
-      display: block;
+    @include media-breakpoint-up(sm) {
+      display: flex;
     }
   }
 
@@ -99,9 +99,17 @@
     }
   }
 
+  &__language {
+    display: none;
+
+    @include media-breakpoint-up(xxl) {
+      display: block;
+    }
+  }
+
   &__signin {
     display: flex;
-    width: 140px;
+    min-width: 140px;
 
     &:hover {
       & .header__signin-option {
@@ -153,8 +161,17 @@
     }
   }
 
+  &__return-order{
+    display: none;
+    min-width: 90px;
+    @include media-breakpoint-up(xl){
+      display: flex;
+    }
+  }
+
   &__add-to-cart {
     display: flex;
+    min-width: 78px;
 
     div {
       span {
