@@ -5,8 +5,12 @@ import { FaSearch } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import flag from "../../images/india-flag.png";
+import { useContext } from "react";
+import StateContext from "../../context/Context";
 
 function Header() {
+  const [{ basket }] = useContext(StateContext);
+
   return (
     <>
       <header className="header fixed-top">
@@ -14,7 +18,7 @@ function Header() {
           <div className="header__content">
             {/* Logo  */}
             <Link
-              to="/main"
+              to="/"
               className="header__logo d-flex align-items-center justify-content-center p-1"
             >
               <img
@@ -25,7 +29,7 @@ function Header() {
             </Link>
             {/* Address  */}
             <Link
-              to="/"
+              to="/*"
               className="header__your-address d-flex align-items-center justify-content-center p-1"
             >
               <ImLocation2 className="text-white fs-5" />
@@ -171,7 +175,7 @@ function Header() {
 
               {/* Return your order */}
               <Link
-                to="/"
+                to="/*"
                 className="header__return-order text-white h-100 d-flex align-items-center justify-content-center p-1"
               >
                 <div className="d-flex flex-column lh-1">
@@ -194,7 +198,7 @@ function Header() {
                     className="position-absolute bg-warning rounded-circle text-black fw-bold"
                     style={{ top: "-12px" }}
                   >
-                    1
+                    {basket?.length}
                   </span>
                 </div>
                 <span className="fw-bold text-white ">Cart</span>

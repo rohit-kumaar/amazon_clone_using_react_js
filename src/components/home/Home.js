@@ -15,7 +15,7 @@ function Home() {
           {data.productData.map((item) => {
             return (
               <Product
-                id={item.id}
+                key={item.id}
                 title={item.title}
                 price={item.price}
                 rating={item.rating}

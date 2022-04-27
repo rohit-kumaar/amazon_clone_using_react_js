@@ -1,9 +1,24 @@
 import "./Product.scss";
+import { useContext } from "react";
+import StateContext from "../../context/Context";
 
-function product(props) {
+function Product(props) {
+  // eslint-disable-next-line
+  const [{ basket }, dispatch] = useContext(StateContext);
+
+  const addToBasket = () => {
+    // Add item to basket
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        ...props,
+      },
+    });
+  };
+
   return (
     <>
-      <div className="product bg-white">
+      <div className="product bg-white " key={props.id}>
         <div className="product__content">
           {/* Title  */}
           <p className="product__title fs-3 fw-bold">{props.title}</p>
@@ -22,11 +37,17 @@ function product(props) {
           </div>
           {/* Image  */}
         </div>
-        <img className="product__img" src={props.img} alt="Apple" />
-        <button className="bg-warning fw-bold rounded-pill my-3">Add To Cart</button>
+        <img className="product__img" src={props.img} alt={props.title} />
+        <button
+          className="bg-warning fw-bold rounded-pill my-3"
+          onClick={addToBasket}
+          on="true"
+        >
+          Add To Cart
+        </button>
       </div>
     </>
   );
 }
 
-export default product;
+export default Product;
