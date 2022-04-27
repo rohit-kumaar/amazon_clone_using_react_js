@@ -17,11 +17,15 @@ function Cart() {
         ) : (
           <div className="container">
             <div className="cart__added">
-              <h2>Your added Cart</h2>
+              <h2 className="d-flex align-items-center justify-content-center">
+                Your added Cart
+              </h2>
 
-              {basket.map((item) => (
+              {basket.map((item, index) => (
+                // comment  if you use {} then you have to "return" a value
                 <CheckoutProduct
-                  key={item.id}
+                  key={index}
+                  id={item.id}
                   title={item.title}
                   price={item.price}
                   rating={item.rating}

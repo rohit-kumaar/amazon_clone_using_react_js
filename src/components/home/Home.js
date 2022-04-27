@@ -12,10 +12,11 @@ function Home() {
 
       <div className="container">
         <div className="products ">
-          {data.productData.map((item) => {
+          {data.productData.map((item, index) => {
             return (
               <Product
-                key={item.id}
+                key={index}
+                id={item.id}
                 title={item.title}
                 price={item.price}
                 rating={item.rating}

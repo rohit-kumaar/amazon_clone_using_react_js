@@ -18,7 +18,7 @@ function Product(props) {
 
   return (
     <>
-      <div className="product bg-white " key={props.id}>
+      <div className="product bg-white ">
         <div className="product__content">
           {/*comment Title  */}
           <p className="product__title fs-3 fw-bold">{props.title}</p>

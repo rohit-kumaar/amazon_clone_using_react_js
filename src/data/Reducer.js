@@ -1,13 +1,5 @@
 export const initialState = {
-  basket: [
-    {
-      id: 1,
-      title: "Mobile",
-      price: 10000,
-      rating: 5,
-      img: "https://source.unsplash.com/420x220/?mobile",
-    },
-  ],
+  basket: [],
   user: null,
 };
 
@@ -22,7 +14,16 @@ function Reducer(state, action) {
 
     case "REMOVE_TO_BASKET":
       // code
-      return { state };
+      let newBasket = [...state.basket];
+      const index = state.basket.findIndex(
+        (basketItem) => basketItem.id === action.id
+      );
+      if (index >= 0) {
+        newBasket.splice(index, 1);
+      } else {
+        console.log(`Can't remove product (id: ${action.id} as it is now)`);
+      }
+      return { ...state, basket: newBasket };
 
     default:
       return state;

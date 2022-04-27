@@ -1,26 +1,49 @@
 import React from "react";
 import "./CheckoutProduct.scss";
+import { useContext } from "react";
+import StateContext from "../../context/Context";
 
 function CheckoutProduct(props) {
+  const [{ basket }, dispatch] = useContext(StateContext);
+
+  const removeFromBasket = () => {
+    dispatch({
+      type: "REMOVE_TO_BASKET",
+      id: props.id,
+    });
+
+  };
+
   return (
     <>
       <div className="checkout-product">
+        {/* comment image  */}
         <div className="checkout-product__img">
           <img src={props.img} alt={props.title} />
         </div>
+        {/* comment details  */}
         <div className="checkout-product__details">
           <h3>{props.title}</h3>
           <p>
             <small>&#8377;</small>
-            <strong>{props.price}</strong>
+            <strong className="ms-1">{props.price}</strong>
           </p>
-          <div>
+          <div className="d-flex align-items-center ">
             {Array(props.rating)
               .fill()
               .map((_) => (
                 <p>⭐</p>
               ))}
           </div>
+          {/* comment remove btn  */}
+          <button
+            className="bg-warning fw-bold rounded-pill my-3 "
+            onClick={removeFromBasket}
+            on="true"
+            style={{ padding: "4px 8px" }}
+          >
+            Remove
+          </button>
         </div>
       </div>
     </>
