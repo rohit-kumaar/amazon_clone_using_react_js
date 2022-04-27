@@ -7,7 +7,7 @@ function Product(props) {
   const [{ basket }, dispatch] = useContext(StateContext);
 
   const addToBasket = () => {
-    // Add item to basket
+    //comment Add item to basket
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
@@ -20,14 +20,14 @@ function Product(props) {
     <>
       <div className="product bg-white " key={props.id}>
         <div className="product__content">
-          {/* Title  */}
+          {/*comment Title  */}
           <p className="product__title fs-3 fw-bold">{props.title}</p>
-          {/* Price  */}
+          {/*comment Price  */}
           <p className="product__price">
             <small>&#8377;</small>
             <strong className="ms-1">{props.price}</strong>
           </p>
-          {/* Rating  */}
+          {/*comment Rating  */}
           <div className="product__rating d-flex">
             {Array(props.rating)
               .fill()
@@ -35,7 +35,7 @@ function Product(props) {
                 <p>⭐</p>
               ))}
           </div>
-          {/* Image  */}
+          {/*comment Image  */}
         </div>
         <img className="product__img" src={props.img} alt={props.title} />
         <button

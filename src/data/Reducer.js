@@ -1,5 +1,13 @@
 export const initialState = {
-  basket: [],
+  basket: [
+    {
+      id: 1,
+      title: "Mobile",
+      price: 10000,
+      rating: 5,
+      img: "https://source.unsplash.com/420x220/?mobile",
+    },
+  ],
   user: null,
 };
 

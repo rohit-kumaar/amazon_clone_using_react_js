@@ -159,12 +159,14 @@
         transform: rotate(45deg);
       }
     }
+
+    
   }
 
-  &__return-order{
+  &__return-order {
     display: none;
     min-width: 90px;
-    @include media-breakpoint-up(xl){
+    @include media-breakpoint-up(xl) {
       display: flex;
     }
   }

@@ -1,0 +1,7 @@
+@import "../../scss/style.scss";
+
+.checkout-product {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr;
+}
