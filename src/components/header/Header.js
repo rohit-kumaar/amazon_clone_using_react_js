@@ -16,7 +16,7 @@ function Header() {
       <header className="header fixed-top">
         <div className="container">
           <div className="header__content">
-            {/* Logo  */}
+            {/* comment Logo  */}
             <Link
               to="/"
               className="header__logo d-flex align-items-center justify-content-center p-1"
@@ -27,7 +27,7 @@ function Header() {
                 alt="Amazon logo"
               />
             </Link>
-            {/* Address  */}
+            {/* comment Address  */}
             <Link
               to="/*"
               className="header__your-address align-items-center justify-content-center p-1"
@@ -38,7 +38,7 @@ function Header() {
                 <span className=" fw-bold text-white">Select your address</span>
               </div>
             </Link>
-            {/* Search Bar  */}
+            {/* comment Search Bar  */}
             <form className="header__search-bar align-items-center justify-content-center p-1">
               <div className="input-group ">
                 <button
@@ -85,14 +85,14 @@ function Header() {
                 </span>
               </div>
             </form>
-            {/* hamburger */}
+            {/* comment hamburger */}
             <div className="header__hamburger ">
               <span></span>
               <span></span>
               <span></span>
             </div>
 
-            {/* Right section  */}
+            {/* comment Right section  */}
             <div className="header__right">
               {/* Your language  */}
               <div className="btn-group header__language ">
@@ -154,7 +154,7 @@ function Header() {
                 </ul>
               </div>
 
-              {/* Sign in or  login  */}
+              {/* comment Sign in or  login  */}
               <Link
                 to="/signin"
                 className="header__signin text-white align-items-center justify-content-center p-1 h-100"
@@ -173,7 +173,7 @@ function Header() {
                 </div>
               </Link>
 
-              {/* Return your order */}
+              {/* comment Return your order */}
               <Link
                 to="/*"
                 className="header__return-order text-white h-100  align-items-center justify-content-center p-1"

@@ -20,7 +20,7 @@ function Cart() {
               <h2 className="d-flex align-items-center justify-content-center">
                 Your added Cart
               </h2>
-
+           
               {basket.map((item, index) => (
                 // comment  if you use {} then you have to "return" a value
                 <CheckoutProduct

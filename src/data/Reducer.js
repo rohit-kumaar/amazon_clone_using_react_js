@@ -13,12 +13,18 @@ function Reducer(state, action) {
       };
 
     case "REMOVE_TO_BASKET":
-      // code
+      // comment Logic to remove item from basket
+
+      // comment we cloned the basket
       let newBasket = [...state.basket];
+
+      // comment we check to see if product exists
       const index = state.basket.findIndex(
         (basketItem) => basketItem.id === action.id
       );
+
       if (index >= 0) {
+        // comment  item exists in basket remove it...
         newBasket.splice(index, 1);
       } else {
         console.log(`Can't remove product (id: ${action.id} as it is now)`);

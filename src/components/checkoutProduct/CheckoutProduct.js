@@ -4,6 +4,7 @@ import { useContext } from "react";
 import StateContext from "../../context/Context";
 
 function CheckoutProduct(props) {
+  // eslint-disable-next-line
   const [{ basket }, dispatch] = useContext(StateContext);
 
   const removeFromBasket = () => {
@@ -11,7 +12,6 @@ function CheckoutProduct(props) {
       type: "REMOVE_TO_BASKET",
       id: props.id,
     });
-
   };
 
   return (
