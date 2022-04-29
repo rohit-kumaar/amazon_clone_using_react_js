@@ -14,7 +14,7 @@ function Home() {
       </div>
       {/* comment Products Section  */}
 
-      <div className="container position" >
+      <div className="container position">
         <div className="products ">
           {data.productData.map((item, index) => {
             return (

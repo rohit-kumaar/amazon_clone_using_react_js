@@ -2,7 +2,7 @@ import "./Header.scss";
 import { Link } from "react-router-dom";
 import { ImLocation2 } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
-import { FiShoppingCart } from "react-icons/fi";
+import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import flag from "../../images/india-flag.png";
 import { useContext } from "react";
@@ -190,13 +190,17 @@ function Header() {
                 className="header__add-to-cart h-100 align-items-center justify-content-center p-1"
               >
                 <div className="position-relative  ">
-                  <FiShoppingCart
+                  <MdOutlineAddShoppingCart
                     style={{ width: "38px", height: "26px" }}
                     className="text-white"
                   />
+                  {/* <FiShoppingCart
+                    style={{ width: "38px", height: "26px" }}
+                    className="text-white"
+                  /> */}
                   <span
-                    className="position-absolute bg-warning rounded-circle text-black fw-bold"
-                    style={{ top: "-12px" }}
+                    className="position-absolute bg-black rounded-circle text-warning fw-bold"
+                    style={{ top: "-10px" }}
                   >
                     {basket?.length}
                   </span>

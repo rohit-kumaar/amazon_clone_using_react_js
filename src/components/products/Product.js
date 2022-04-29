@@ -1,6 +1,7 @@
 import "./Product.scss";
 import { useContext } from "react";
 import StateContext from "../../context/Context";
+import { Link } from "react-router-dom";
 
 function Product(props) {
   // eslint-disable-next-line
@@ -18,7 +19,7 @@ function Product(props) {
 
   return (
     <>
-      <div className="product bg-white ">
+      <Link to="/" className="product bg-white  text-black">
         <div className="product__content">
           {/*comment Title  */}
           <p className="product__title fs-3 fw-bold">{props.title}</p>
@@ -45,7 +46,7 @@ function Product(props) {
         >
           Add To Cart
         </button>
-      </div>
+      </Link>
     </>
   );
 }

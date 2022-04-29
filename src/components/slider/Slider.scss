@@ -6,7 +6,6 @@
 }
 
 .owl-nav {
-  //   position: relative;
   button[type="button"] {
     position: absolute;
     top: 0;
@@ -17,7 +16,8 @@
     :is(&:nth-child(1), &:nth-child(2)) {
       font-size: 95px;
       &:hover {
-        border: 1px solid $color-white;
+        box-shadow: inset 0 0 0 2px $color-white,
+          inset 0 0 0 4px $color-metallic-seaweed;
         background: transparent;
         color: $color-black;
       }
