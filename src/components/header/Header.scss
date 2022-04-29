@@ -14,6 +14,20 @@
     & > * {
       height: 50px;
     }
+    // comment
+    // .test {
+    //   position: absolute;
+    //   inset: 0;
+    //   min-height: 100vh;
+    //   margin-top: 60px;
+    //   display: none;
+
+    //   &:hover {
+    //     .header__signin-option {
+    //       display: none;
+    //     }
+    //   }
+    // }
   }
 
   :is(&__logo, &__your-address, &__signin, &__return-order, &__add-to-cart) {
@@ -76,7 +90,7 @@
       left: 20%;
       width: 30px;
       height: 3px;
-      background: white;
+      background: $color-white;
       border-radius: 50px;
 
       &:nth-child(1) {
@@ -133,8 +147,12 @@
     &:hover {
       & .header__signin-option {
         display: block;
-        backdrop-filter: opacity(20%);
       }
+      // comment
+      // .test {
+      //   display: block;
+      //   background: #00000069;
+      // }
     }
 
     div {
@@ -161,7 +179,8 @@
 
     &-option {
       position: absolute;
-      right: -130px;
+      right: 71px;
+      top: 50px;
       width: 500px;
       height: 400px;
       background: $color-white;
