@@ -184,7 +184,7 @@ function Header() {
                 </div>
               </Link>
 
-              {/* Add to cart icon  */}
+              {/*comment Add to cart icon  */}
               <Link
                 to="/cart"
                 className="header__add-to-cart h-100 align-items-center justify-content-center p-1"
@@ -194,10 +194,6 @@ function Header() {
                     style={{ width: "38px", height: "26px" }}
                     className="text-white"
                   />
-                  {/* <FiShoppingCart
-                    style={{ width: "38px", height: "26px" }}
-                    className="text-white"
-                  /> */}
                   <span
                     className="position-absolute bg-black rounded-circle text-warning fw-bold"
                     style={{ top: "-10px" }}

@@ -4,7 +4,7 @@ import StateContext from "../../context/Context";
 import { Link } from "react-router-dom";
 
 function Product(props) {
-  // eslint-disable-next-line
+  //comment eslint-disable-next-line
   const [{ basket }, dispatch] = useContext(StateContext);
 
   const addToBasket = () => {

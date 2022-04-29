@@ -5,6 +5,20 @@
   height: 70vh;
 }
 
+.img-wrapper {
+  position: relative;
+  span {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      0.5turn,
+      transparent,
+      transparent,
+      $color-white-100
+    );
+  }
+}
+
 .owl-nav {
   button[type="button"] {
     position: absolute;

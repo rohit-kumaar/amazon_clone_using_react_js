@@ -123,7 +123,7 @@ const data = {
     {
       id: 18,
       title: "Canon EOS 6D Mark II DSLR Camera (Body Only)",
-      price: '1,07,240.35 + tax',
+      price: "1,07,240.35 + tax",
       rating: 5,
       img: "https://static.bhphoto.com/images/images500x500/1561852319_1346734.jpg",
     },
@@ -141,6 +141,31 @@ const data = {
       price: "3,529",
       rating: 4,
       img: "https://m.media-amazon.com/images/I/81W+I4RMDcS._AC_SL1500_.jpg",
+    },
+  ],
+
+  // comment implemented but not working
+  sliderData: [
+    {
+      img: "https://m.media-amazon.com/images/I/91NKjKsNxhL._SX3000_.jpg",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/61TZWWADOaL._SX3000_.jpg",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/814G81QOVIL._SX3000_.jpg",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/61tZn5amuQL._SX3000_.jpg",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/816bEwGy3nL._SX3000_.jpg",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/61XJMtByggL._SX3000_.jpg",
+    },
+    {
+      img: "https://m.media-amazon.com/images/I/61gmF5nxjLL._SX3000_.jpg",
     },
   ],
 };
