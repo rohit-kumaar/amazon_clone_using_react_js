@@ -4,7 +4,9 @@ import "./Main.scss";
 function Main() {
   return (
     <>
-      <Home />
+      <main>
+        <Home />
+      </main>
     </>
   );
 }

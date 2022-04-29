@@ -6,15 +6,15 @@ import Slider from "../slider/Slider";
 function Home() {
   return (
     <>
-      <div className="home">
+      <section className="home">
         <div className="container">
           {/* comment Slicer Component  */}
           <Slider />
         </div>
-      </div>
+      </section>
       {/* comment Products Section  */}
 
-      <div className="container position">
+      <section className="container position">
         <div className="products ">
           {data.productData.map((item, index) => {
             return (
@@ -29,7 +29,7 @@ function Home() {
             );
           })}
         </div>
-      </div>
+      </section>
     </>
   );
 }

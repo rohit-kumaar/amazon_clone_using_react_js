@@ -107,6 +107,25 @@
     }
   }
 
+  &__btn-section {
+    @include flexCenter;
+    flex-direction: column;
+    grid-area: top;
+    border-bottom: 1px solid $color-white-100;
+  }
+  &__lists {
+    grid-area: left;
+  }
+
+  &__your-account {
+    grid-area: right;
+    border-left: 1px solid $color-white-100;
+  }
+
+  &__new-customer {
+    font-size: 11px;
+  }
+
   &__signin {
     display: flex;
     min-width: 140px;
@@ -114,6 +133,7 @@
     &:hover {
       & .header__signin-option {
         display: block;
+        backdrop-filter: opacity(20%);
       }
     }
 
@@ -142,14 +162,13 @@
     &-option {
       position: absolute;
       right: -130px;
-      border: 1px solid red;
       width: 500px;
       height: 400px;
       background: $color-white;
       border-radius: 5px;
       display: none;
 
-      span {
+      .arrow {
         position: absolute;
         right: 126px;
         top: -4px;
@@ -157,6 +176,36 @@
         height: 20px;
         background: $color-white;
         transform: rotate(45deg);
+      }
+
+      &-content {
+        display: grid;
+        grid-template:
+          "top top " auto
+          "left right" auto
+          / 0.9fr 1fr;
+        gap: 20px;
+      }
+    }
+  }
+
+  :is(&__lists, &__your-account) {
+    ul {
+      li {
+        font-size: 13px;
+
+        & > * {
+          color: $color-black-300;
+        }
+
+        & > *:hover {
+          color: $color-orange;
+        }
+
+        &:hover {
+          color: $color-orange;
+          text-decoration: underline;
+        }
       }
     }
   }

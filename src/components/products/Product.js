@@ -4,7 +4,7 @@ import StateContext from "../../context/Context";
 import { Link } from "react-router-dom";
 
 function Product(props) {
-  //comment eslint-disable-next-line
+  // eslint-disable-next-line
   const [{ basket }, dispatch] = useContext(StateContext);
 
   const addToBasket = () => {
@@ -22,7 +22,9 @@ function Product(props) {
       <Link to="/" className="product bg-white  text-black">
         <div className="product__content">
           {/*comment Title  */}
-          <p className="product__title fs-3 fw-bold">{props.title}</p>
+          <p className="product__title fs-3 fw-bold text-center">
+            {props.title}
+          </p>
           {/*comment Price  */}
           <p className="product__price">
             <small>&#8377;</small>

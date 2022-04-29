@@ -1,5 +1,5 @@
 import "./Header.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ImLocation2 } from "react-icons/im";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
@@ -94,7 +94,7 @@ function Header() {
 
             {/* comment Right section  */}
             <div className="header__right">
-              {/* Your language  */}
+              {/*comment Your language  */}
               <div className="btn-group header__language ">
                 <button
                   type="button"
@@ -166,9 +166,95 @@ function Header() {
 
                 <div className="header__signin-icon">
                   <RiArrowDropDownFill />
+                  {/* comment sign in account pop up  */}
+                  <div className="test">
+                    <div className="header__signin-option">
+                      <span className="arrow"></span>
+                      <div className="header__signin-option-content text-dark p-3">
+                        {/* comment sign in btn */}
+                        <NavLink className="header__btn-section" to="/">
+                          <button className="header__signin-btn">
+                            Sign in
+                          </button>
+                          <p className="header__new-customer my-1">
+                            <span className="text-dark"> New customer? </span>
+                            <Link to="/">Start here.</Link>
+                          </p>
+                        </NavLink>
 
-                  <div className="header__signin-option">
-                    <span></span>
+                        {/* comment your list  */}
+                        <div className="header__lists">
+                          <h6 className="fw-bold">Your Lists</h6>
+
+                          <ul>
+                            <li>
+                              <NavLink to="/">Create a Wish List</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Wish from Any Website</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Baby Wishlist</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Discover Your Style</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Explore Showroom</NavLink>
+                            </li>
+                          </ul>
+                        </div>
+
+                        {/* comment your account  */}
+                        <div className="header__your-account ps-3">
+                          <h6 className="fw-bold">Your Account</h6>
+
+                          <ul>
+                            <li>
+                              <NavLink to="/">Your account</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Your Orders</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Your Wish List</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Your Recommendations</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Your Prime Membership</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Your Prime Video</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">
+                                Your Subscribe &amp; Save Items
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">
+                                Memberships &amp; Subscriptions
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">
+                                Your Amazon Business Account
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">Your Seller Account</NavLink>
+                            </li>
+                            <li>
+                              <NavLink to="/">
+                                Manage Your Content and Devices
+                              </NavLink>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Link>
