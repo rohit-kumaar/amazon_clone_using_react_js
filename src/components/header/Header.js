@@ -7,6 +7,7 @@ import { RiArrowDropDownFill } from "react-icons/ri";
 import flag from "../../images/india-flag.png";
 import { useContext } from "react";
 import StateContext from "../../context/Context";
+import logo from '../../images/amazon-logo.png'
 
 function Header() {
   const [{ basket }] = useContext(StateContext);
@@ -23,7 +24,7 @@ function Header() {
             >
               <img
                 className="header__logo-img"
-                src="https://pngshare.com/wp-content/uploads/2021/06/Amazon-Logo-Black-Background-11.png"
+                src={logo}
                 alt="Amazon logo"
               />
             </Link>
