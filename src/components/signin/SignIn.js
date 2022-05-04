@@ -12,6 +12,11 @@ function SignIn() {
     setOpen(true);
   };
 
+  const headerBlock = () => {
+    const header = document.querySelector(".header");
+    header.style.display = "block";
+  };
+
   return (
     <>
       <div className="signin-wrapper ">
@@ -22,8 +27,9 @@ function SignIn() {
               className="signin__logo"
               loading="lazy"
               src={logo}
-              alt=""
-              title=""
+              alt="amazon"
+              title="amazon"
+              onClick={headerBlock}
             />
           </NavLink>
 

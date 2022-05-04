@@ -12,6 +12,11 @@ import logo from "../../images/amazon-logo.png";
 function Header() {
   const [{ basket }] = useContext(StateContext);
 
+  const headerNone = () => {
+    const header = document.querySelector(".header");
+    header.style.display = "none";
+  };
+
   return (
     <>
       <header className="header fixed-top">
@@ -155,6 +160,7 @@ function Header() {
               <Link
                 to="/sign-in"
                 className="header__signin text-white align-items-center justify-content-center p-1 h-100"
+                onClick={headerNone}
               >
                 <div>
                   <span>Hello, Sign in</span>
