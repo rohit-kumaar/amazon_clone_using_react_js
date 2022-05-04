@@ -8,31 +8,32 @@ function SignIn() {
     <>
       <div className="signin-wrapper ">
         <section className="signin">
+          {/* comment logo  */}
+          <NavLink to="/" className="d-flex justify-content-center mb-4">
+            <img
+              className="signin__logo"
+              loading="lazy"
+              src={logo}
+              alt=""
+              title=""
+            />
+          </NavLink>
+
           {/* comment top  */}
           <div className="signin__top">
-            {/* comment logo  */}
-            <NavLink to="/" className="d-flex justify-content-center">
-              <img
-                className="signin__logo"
-                loading="lazy"
-                src={logo}
-                alt=""
-                title=""
-              />
-            </NavLink>
             {/* comment Sign in info  */}
             <form>
               <h3>Sign-in</h3>
               {/* comment sign in details  */}
               <div className="signin__info">
-                <label htmlFor="signin__user-info" className="mt-3">
+                <label htmlFor="signin__user-info" className="mt-3 mb-1">
                   Email or mobile phone number
                 </label>
-                <input type="text" name="text" id="signin__user-info" />
+                <input  type="text" name="text" id="signin__user-info" />
               </div>
               {/* comment sign in btn  */}
               <Link to="#">
-                <button className="signin__btn header__signin-btn  mt-2">
+                <button className="signin__btn header__signin-btn  mt-3">
                   Continue
                 </button>
               </Link>

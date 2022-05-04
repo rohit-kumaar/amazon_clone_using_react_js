@@ -7,6 +7,7 @@
   &__top {
     padding: 20px 26px;
     border: 1px solid $color-white-100;
+    border-radius: 5px;
 
     form {
       details {
@@ -32,16 +33,29 @@
 
     button {
       padding-block: 5px;
+      border: 1px solid $color-black-300;
       border-radius: 3px;
       font-size: 13px;
+      background: linear-gradient(
+        to bottom,
+        $color-white-lilac,
+        $color-white-green
+      );
+
+      &:hover {
+        background: linear-gradient(
+          to bottom,
+          $color-gray-goose,
+          $color-platinum
+        );
+      }
     }
   }
 
   &-wrapper {
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
-    height: calc(100vh - 60px);
-    margin-top: 60px;
+    height: 100vh;
     background: $color-white;
   }
 
@@ -57,8 +71,14 @@
 
     input {
       width: 100%;
+      padding-inline: 5px;
       border-radius: 3px;
       border: 1px solid $color-black-300;
+
+      &:focus {
+        border: none;
+        box-shadow: 0px 0px 7px $color-orange;
+      }
     }
   }
 
@@ -86,7 +106,7 @@
     }
 
     ul {
-      width: 23.17%;
+      gap: 20px;
     }
     p {
       color: $color-black-300;
