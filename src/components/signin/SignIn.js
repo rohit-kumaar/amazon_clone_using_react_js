@@ -29,7 +29,7 @@ function SignIn() {
                 <label htmlFor="signin__user-info" className="mt-3 mb-1">
                   Email or mobile phone number
                 </label>
-                <input  type="text" name="text" id="signin__user-info" />
+                <input type="text" name="text" id="signin__user-info" />
               </div>
               {/* comment sign in btn  */}
               <Link to="#">
