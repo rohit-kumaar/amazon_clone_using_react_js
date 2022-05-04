@@ -1,0 +1,79 @@
+@import "../../scss/style.scss";
+
+.signin {
+  width: 23.17%;
+
+  :is(&, &__footer) {
+    margin-inline: auto;
+  }
+
+  &__top {
+    padding: 20px 26px;
+    border: 1px solid $color-white-100;
+
+    form {
+      details {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__bottom {
+    div {
+      @include flexCenter;
+      span {
+        width: 34%;
+        height: 1px;
+        background: $color-white-100;
+      }
+      p {
+        width: fit-content;
+        color: $color-black-400;
+        font-size: 12px;
+      }
+    }
+
+    button {
+      padding-block: 5px;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    margin-top: 60px;
+    background: $color-white;
+  }
+
+  &__logo {
+    width: 120px;
+  }
+
+  &__info {
+    label {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid $color-black-300;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__privacy {
+    font-size: 12px;
+  }
+
+  &__footer {
+    border-top: 1px solid #000;
+  }
+}

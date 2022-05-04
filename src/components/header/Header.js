@@ -7,7 +7,7 @@ import { RiArrowDropDownFill } from "react-icons/ri";
 import flag from "../../images/india-flag.png";
 import { useContext } from "react";
 import StateContext from "../../context/Context";
-import logo from '../../images/amazon-logo.png'
+import logo from "../../images/amazon-logo.png";
 
 function Header() {
   const [{ basket }] = useContext(StateContext);
@@ -22,11 +22,7 @@ function Header() {
               to="/"
               className="header__logo d-flex align-items-center justify-content-center p-1"
             >
-              <img
-                className="header__logo-img"
-                src={logo}
-                alt="Amazon logo"
-              />
+              <img className="header__logo-img" src={logo} alt="Amazon logo" />
             </Link>
             {/* comment Address  */}
             <Link
@@ -157,7 +153,7 @@ function Header() {
 
               {/* comment Sign in or  login  */}
               <Link
-                to="/signin"
+                to="/sign-in"
                 className="header__signin text-white align-items-center justify-content-center p-1 h-100"
               >
                 <div>
@@ -171,12 +167,12 @@ function Header() {
 
                 {/* <div className="test"></div> */}
 
-                {/* comment sign in account pop up  */}
+                {/* comment sign in account pop up or hover */}
                 <div className="header__signin-option">
                   <span className="arrow"></span>
                   <div className="header__signin-option-content text-dark p-3">
                     {/* comment sign in btn */}
-                    <NavLink className="header__btn-section" to="/">
+                    <NavLink className="header__btn-section" to="/sign-in">
                       <button className="header__signin-btn">Sign in</button>
                       <p className="header__new-customer my-1">
                         <span className="text-dark"> New customer? </span>
