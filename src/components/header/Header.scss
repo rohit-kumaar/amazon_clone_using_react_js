@@ -14,21 +14,6 @@
     & > * {
       height: 50px;
     }
-    // comment
-    // .test {
-    //   z-index: 200;
-    //   position: absolute;
-    //   inset: 0;
-    //   min-height: 100vh;
-    //   margin-top: 60px;
-    //   display: none;
-
-    //   &:hover {
-    //     .header__signin-option {
-    //       display: none;
-    //     }
-    //   }
-    // }
   }
 
   :is(&__logo, &__your-address, &__signin, &__return-order, &__add-to-cart) {
@@ -149,11 +134,15 @@
       & .header__signin-option {
         display: block;
       }
-      // comment
-      // .test {
-      //   display: block;
-      //   background: #00000069;
-      // }
+
+      & .test {
+        z-index: 10;
+        position: absolute;
+        inset: 0;
+        min-height: 100vh;
+        margin-top: 60px;
+        background: #00000069;
+      }
     }
 
     div {
@@ -177,8 +166,9 @@
     &-icon {
       position: relative;
     }
-
+    // comment
     &-option {
+      z-index: 20;
       position: absolute;
       right: 71px;
       top: 50px;
