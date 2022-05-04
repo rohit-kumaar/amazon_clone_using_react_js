@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./SignIn.scss";
 import logo from "../../images/signin-logo.jpg";
 import { NavLink, Link } from "react-router-dom";
 
 function SignIn() {
+  const [open, setOpen] = useState(false);
+
+  const focus = useRef(null);
+  const focusOnInput = () => {
+    focus.current.focus();
+    setOpen(true);
+  };
+
   return (
     <>
       <div className="signin-wrapper ">
@@ -29,11 +37,29 @@ function SignIn() {
                 <label htmlFor="signin__user-info" className="mt-3 mb-1">
                   Email or mobile phone number
                 </label>
-                <input type="text" name="text" id="signin__user-info" />
+                <input
+                  ref={focus}
+                  type="text"
+                  name="text"
+                  id="signin__user-info"
+                />
+                {/* comment invalid warning */}
+                <p
+                  style={{
+                    display: open ? "block" : "none",
+                    fontSize: "12px",
+                    color: "red",
+                  }}
+                >
+                  ! Enter your email or mobile phone number
+                </p>
               </div>
               {/* comment sign in btn  */}
               <Link to="#">
-                <button className="signin__btn header__signin-btn  mt-3">
+                <button
+                  className="signin__btn header__signin-btn  mt-3"
+                  onClick={focusOnInput}
+                >
                   Continue
                 </button>
               </Link>
