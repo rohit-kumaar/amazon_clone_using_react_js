@@ -72,7 +72,7 @@ function SignIn() {
         {/* comment footer  */}
         <footer className="signin__footer mt-4">
           {/* comment top */}
-          <ul>
+          <ul className="d-flex  justify-content-around px-4 ">
             <li>
               <Link to="#">Conditions of Use </Link>
             </li>
@@ -84,7 +84,9 @@ function SignIn() {
             </li>
           </ul>
           {/* comment bottom */}
-          <p>© 1996-2022, Amazon.com, Inc. or its affiliates</p>
+          <p className="mt-3">
+            © 1996-2022, Amazon.com, Inc. or its affiliates
+          </p>
         </footer>
       </div>
     </>
