@@ -42,7 +42,7 @@ function Product(props) {
         </div>
         <img className="product__img" src={props.img} alt={props.title} />
         <button
-          className="bg-warning  my-3 header__signin-btn"
+          className="bg-warning  my-3 button"
           onClick={addToBasket}
           on="true"
           style={{ width: "fit-content" }}

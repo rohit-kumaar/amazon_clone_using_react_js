@@ -64,7 +64,7 @@ function SignIn() {
               {/* comment sign in btn  */}
               <Link to="#">
                 <button
-                  className="signin__btn header__signin-btn  mt-3"
+                  className="signin__btn button  mt-3"
                   onClick={focusOnInput}
                 >
                   Continue

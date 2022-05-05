@@ -179,7 +179,7 @@ function Header() {
                   <div className="header__signin-option-content text-dark p-3">
                     {/* comment sign in btn */}
                     <NavLink className="header__btn-section" to="/sign-in">
-                      <button className="header__signin-btn">Sign in</button>
+                      <button className="button">Sign in</button>
                       <p className="header__new-customer my-1">
                         <span className="text-dark"> New customer? </span>
                         <Link to="/">Start here.</Link>

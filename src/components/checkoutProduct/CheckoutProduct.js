@@ -37,7 +37,7 @@ function CheckoutProduct(props) {
           </div>
           {/* comment remove btn  */}
           <button
-            className="bg-warning   my-3 header__signin-btn"
+            className="bg-warning   my-3 button"
             onClick={removeFromBasket}
             on="true"
             style={{ padding: "4px 8px" , width:'fit-content' }}
