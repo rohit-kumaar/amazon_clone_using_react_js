@@ -16,7 +16,7 @@ function CheckoutProduct(props) {
 
   return (
     <>
-      <div className="checkout-product">
+      <div className="checkout-product py-5 bg-white">
         {/* comment image  */}
         <div className="checkout-product__img">
           <img src={props.img} alt={props.title} />
@@ -37,10 +37,10 @@ function CheckoutProduct(props) {
           </div>
           {/* comment remove btn  */}
           <button
-            className="bg-warning fw-bold rounded-pill my-3 "
+            className="bg-warning   my-3 header__signin-btn"
             onClick={removeFromBasket}
             on="true"
-            style={{ padding: "4px 8px" }}
+            style={{ padding: "4px 8px" , width:'fit-content' }}
           >
             Remove
           </button>

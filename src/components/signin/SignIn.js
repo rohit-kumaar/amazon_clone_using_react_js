@@ -4,6 +4,7 @@ import logo from "../../images/signin-logo.jpg";
 import { NavLink, Link } from "react-router-dom";
 
 function SignIn() {
+  const today = new Date();
   const [open, setOpen] = useState(false);
 
   const focus = useRef(null);
@@ -19,16 +20,16 @@ function SignIn() {
 
   return (
     <>
-      <div className="signin-wrapper ">
+      <div className="signin-wrapper">
         <section className="signin">
           {/* comment logo  */}
-          <NavLink to="/" className="d-flex justify-content-center mb-4">
+          <NavLink to="/" className="d-flex justify-content-center mb-4 pt-2">
             <img
               className="signin__logo"
               loading="lazy"
               src={logo}
               alt="amazon"
-              title="amazon"
+              title="Go To Home Page"
               onClick={headerBlock}
             />
           </NavLink>
@@ -118,7 +119,7 @@ function SignIn() {
           </ul>
           {/* comment bottom */}
           <p className="mt-3">
-            © 1996-2022, Amazon.com, Inc. or its affiliates
+            © 1996-{today.getFullYear()}, Amazon.com, Inc. or its affiliates
           </p>
         </footer>
       </div>

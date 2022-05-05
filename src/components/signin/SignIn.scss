@@ -53,8 +53,6 @@
   }
 
   &-wrapper {
-    @include flexCenter;
-    flex-direction: column;
     height: 100vh;
     background: $color-white;
   }

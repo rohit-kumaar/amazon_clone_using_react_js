@@ -42,9 +42,10 @@ function Product(props) {
         </div>
         <img className="product__img" src={props.img} alt={props.title} />
         <button
-          className="bg-warning fw-bold rounded-pill my-3"
+          className="bg-warning  my-3 header__signin-btn"
           onClick={addToBasket}
           on="true"
+          style={{ width: "fit-content" }}
         >
           Add To Cart
         </button>
