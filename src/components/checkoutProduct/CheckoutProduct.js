@@ -16,7 +16,7 @@ function CheckoutProduct(props) {
 
   return (
     <>
-      <div className="checkout-product py-5 bg-white">
+      <div className="checkout-product p-5 bg-white">
         {/* comment image  */}
         <div className="checkout-product__img">
           <img src={props.img} alt={props.title} />
@@ -40,7 +40,7 @@ function CheckoutProduct(props) {
             className="bg-warning   my-3 button"
             onClick={removeFromBasket}
             on="true"
-            style={{ padding: "4px 8px" , width:'fit-content' }}
+            style={{ padding: "4px 8px", width: "fit-content" }}
           >
             Remove
           </button>
