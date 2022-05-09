@@ -14,6 +14,9 @@ function Slider() {
           loop
           nav
           margin={8}
+          autoplay={true}
+          autoplayTimeout={2000}
+          autoplayHoverPause={true}
         >
           <div className="img-wrapper">
             <img

@@ -1,7 +1,7 @@
 const INITIAL_VALUE = 0;
 
 export const getBasketTotal = (basket) =>
-  basket?.reduce((pre, acc) => acc.price + pre, INITIAL_VALUE);
+  basket?.reduce((prv, acc) => acc.price + prv, INITIAL_VALUE);
 
 export const initialState = {
   basket: [],
