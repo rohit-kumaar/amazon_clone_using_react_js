@@ -3,7 +3,7 @@ import { useContext } from "react";
 import StateContext from "../../context/Context";
 import CheckoutProduct from "../checkoutProduct/CheckoutProduct";
 import { Link } from "react-router-dom";
-import CurrencyFormat from "react-currency-format";
+// import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../../data/Reducer";
 
 function Cart() {
@@ -42,13 +42,13 @@ function Cart() {
               <div className="cart-total-price">
                 <h5 className="cart-total-price__header mb-3">
                   Cart subtotal:{" "}
-                  <CurrencyFormat
+                  {/* <CurrencyFormat
                     decimalScale={2}
                     value={getBasketTotal(basket)}
                     displayType={"text"}
                     thousandSeparator={true}
                     prefix={"₹"}
-                  />
+                  /> */}
                 </h5>
 
                 <Link to="#">
